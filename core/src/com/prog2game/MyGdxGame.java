@@ -3,12 +3,15 @@ package com.prog2game;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.RunnableAction;
 
 public class MyGdxGame extends Game {
+
 
 	private LoadingScreen loadingScreen;
 	private PreferencesScreen preferencesScreen;
@@ -26,6 +29,7 @@ public class MyGdxGame extends Game {
 	public void create () {
 		loadingScreen = new LoadingScreen(this);
 		setScreen(loadingScreen);
+
 
 	}
 
