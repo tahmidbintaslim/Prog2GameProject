@@ -18,7 +18,7 @@ public class MyGdxGame extends Game {
 	private MenuScreen menuScreen;
 	private MainScreen mainScreen;
 	private EndScreen endScreen;
-
+	///const variables
 	public final static int MENU = 0;
 	public final static int PREFERENCES = 1;
 	public final static int APPLICATION = 2;
@@ -32,7 +32,7 @@ public class MyGdxGame extends Game {
 
 
 	}
-
+     ///method used to switch screens(classes).
 	public void changeScreen (int screen) {
 		switch(screen){
 			case MENU:
