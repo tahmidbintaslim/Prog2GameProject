@@ -2,7 +2,7 @@ package com.prog2game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -17,6 +17,7 @@ import static com.badlogic.gdx.scenes.scene2d.InputEvent.Type.exit;
 
 public class MenuScreen implements Screen {
 
+    // Properties:
     private SpriteBatch batch;
     private Texture texture;
     private MyGdxGame parent;
@@ -74,8 +75,9 @@ public class MenuScreen implements Screen {
 //        batch.begin();
 //        batch.draw(texture,100,100);
 //        batch.end();
+
         Gdx.gl.glClearColor(0f, 0f, 0f, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
         stage.getBatch().begin();
         stage.getBatch().draw(texture,150,300);
@@ -102,6 +104,7 @@ public class MenuScreen implements Screen {
     public void hide() {
 
     }
+
     //Gets rid of stuff from here
     @Override
     public void dispose() {
