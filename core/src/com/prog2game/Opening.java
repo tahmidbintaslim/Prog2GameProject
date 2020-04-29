@@ -1,14 +1,23 @@
 package com.prog2game;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import org.graalvm.compiler.phases.common.NodeCounterPhase;
 
-public class Application implements Screen {
+import java.awt.*;
 
-    private MyGdxGame parent;
+public class Opening implements Screen {
 
-    public Application(MyGdxGame myGdxGame) {
-        parent = myGdxGame;
+    private Stage stage;
+
+    public Opening () {
+//        textimg = new Texture(Gdx.files.internal("assets/badlogic.jpg"));
+
     }
+
 
     @Override
     public void show() {
