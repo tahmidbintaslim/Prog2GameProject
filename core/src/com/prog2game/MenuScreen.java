@@ -17,6 +17,7 @@ import static com.badlogic.gdx.scenes.scene2d.InputEvent.Type.exit;
 
 public class MenuScreen implements Screen {
 
+    // Properties:
     private SpriteBatch batch;
     private Texture texture;
     private MyGdxGame parent;
