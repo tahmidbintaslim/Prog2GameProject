@@ -16,7 +16,6 @@ public class MainScreen implements Screen   {
     private Stage stage;
     public MainScreen(MyGdxGame myGdxGame) {
         parent = myGdxGame;
-        parent = myGdxGame;
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
