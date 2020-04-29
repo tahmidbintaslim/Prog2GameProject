@@ -24,7 +24,7 @@ public class MainScreen implements Screen   {
         Gdx.input.setInputProcessor(stage);
 
     }
-    ///This class will create a pop dialog
+    ///
     public static class ExitDalog extends Dialog {
 
         public ExitDalog(String title, Skin skin) {
