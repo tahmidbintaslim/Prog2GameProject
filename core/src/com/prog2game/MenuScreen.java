@@ -73,6 +73,7 @@ public class MenuScreen implements Screen {
 //        batch.begin();
 //        batch.draw(texture,100,100);
 //        batch.end();
+
         Gdx.gl.glClearColor(0f, 0f, 0f, 1);
         Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
@@ -101,6 +102,7 @@ public class MenuScreen implements Screen {
     public void hide() {
 
     }
+
     //Gets rid of stuff from here
     @Override
     public void dispose() {

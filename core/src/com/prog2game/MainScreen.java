@@ -14,6 +14,7 @@ public class MainScreen implements Screen   {
 
     private MyGdxGame parent;
     private Stage stage;
+
     public MainScreen(MyGdxGame myGdxGame) {
         parent = myGdxGame;
         stage = new Stage(new ScreenViewport());
@@ -34,8 +35,6 @@ public class MainScreen implements Screen   {
         TextButton attack = new TextButton("Attack",skin);
         TextButton skills = new TextButton("Skills",skin);
         TextButton items = new TextButton("Items",skin);
-
-
 
         table.add(attack).fillX().uniformX();
         table.row().pad(10,0,10,0);
