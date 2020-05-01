@@ -1,20 +1,13 @@
 package com.prog2game;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL30;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.actions.RunnableAction;
 
 public class MyGdxGame extends Game {
 
 	private LoadingScreen loadingScreen;
 	private PreferencesScreen preferencesScreen;
 	private MenuScreen menuScreen;
-	private MainScreen mainScreen;
+	private FightScreen fightScreen;
 	private EndScreen endScreen;
 
 	///const variables
@@ -42,8 +35,8 @@ public class MyGdxGame extends Game {
 				this.setScreen(preferencesScreen);
 				break;
 			case APPLICATION:
-				if(mainScreen == null) mainScreen = new MainScreen(this);
-				this.setScreen(mainScreen);
+				if(fightScreen == null) fightScreen = new FightScreen(this);
+				this.setScreen(fightScreen);
 				break;
 			case ENDGAME:
 				if(endScreen == null) endScreen = new EndScreen(this);
