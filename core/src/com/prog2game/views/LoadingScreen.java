@@ -1,14 +1,8 @@
-package com.prog2game;
+package com.prog2game.views;
 
 import com.badlogic.gdx.Screen;
 
-public class MainScreen implements Screen   {
-
-    private MyGdxGame parent;
-
-    public MainScreen(MyGdxGame myGdxGame) {
-        parent = myGdxGame;
-    }
+public class LoadingScreen implements Screen {
 
     @Override
     public void show() {

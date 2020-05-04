@@ -1,20 +1,22 @@
 package com.prog2game;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import org.graalvm.compiler.phases.common.NodeCounterPhase;
 
-public class LoadingScreen implements Screen {
+import java.awt.*;
 
-    private MyGdxGame parent;
+public class Opening implements Screen {
 
+    private Stage stage;
 
-    public LoadingScreen(MyGdxGame myGdxGame) {
-        parent = myGdxGame;
+    public Opening () {
+//        textimg = new Texture(Gdx.files.internal("assets/badlogic.jpg"));
+
     }
-
-
-
-
-
 
 
     @Override
@@ -24,7 +26,7 @@ public class LoadingScreen implements Screen {
 
     @Override
     public void render(float delta) {
-        parent.changeScreen(MyGdxGame.MENU);
+
     }
 
     @Override
@@ -51,6 +53,4 @@ public class LoadingScreen implements Screen {
     public void dispose() {
 
     }
-
-
 }

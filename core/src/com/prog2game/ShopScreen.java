@@ -2,14 +2,7 @@ package com.prog2game;
 
 import com.badlogic.gdx.Screen;
 
-public class Application implements Screen {
-
-    private MyGdxGame parent;
-
-    public Application(MyGdxGame myGdxGame) {
-        parent = myGdxGame;
-    }
-
+public class ShopScreen implements Screen {
     @Override
     public void show() {
 
